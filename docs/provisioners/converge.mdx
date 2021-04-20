@@ -22,12 +22,11 @@ new images.
 
 The example below is fully functional.
 
-```json
-{
-  "type": "converge",
-  "module": "https://raw.githubusercontent.com/asteris-llc/converge/master/samples/fileContent.hcl",
-  "params": {
-    "message": "Hello, Packer!"
+```hcl
+provisioner "converge" {
+  module = "https://raw.githubusercontent.com/asteris-llc/converge/master/samples/fileContent.hcl"
+  params = {
+    message = "Hello, Packer!"
   }
 }
 ```
@@ -77,8 +76,6 @@ Optional parameters:
 
 - `prevent_bootstrap_sudo` (boolean) - stop Converge from bootstrapping with
   administrator privileges via sudo
-
-@include 'provisioners/common-config.mdx'
 
 ### Module Directories
 
