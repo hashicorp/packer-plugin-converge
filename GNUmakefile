@@ -13,7 +13,7 @@ dev: build
 	@mkdir -p ~/.packer.d/plugins/
 	@mv ${BINARY} ~/.packer.d/plugins/${BINARY}
 
-run-example:
+run-example: dev
 	@packer init ./example
 	@packer build ./example
 
