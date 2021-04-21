@@ -25,6 +25,7 @@ The example below is fully functional.
 ```hcl
 provisioner "converge" {
   module = "https://raw.githubusercontent.com/asteris-llc/converge/master/samples/fileContent.hcl"
+  prevent_sudo = true
   params = {
     message = "Hello, Packer!"
   }

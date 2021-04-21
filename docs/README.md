@@ -58,4 +58,6 @@ on [installing a plugin](https://www.packer.io/docs/extending/plugins/#installin
 
 ### Provisioners
 
-- [converge](provisioners/converge.mdx) - The Packer provisioner uses Converge modules to provision the machine. It uploads module directories to use as source, or you can use remote modules.
+
+- [converge](provisioners/converge.mdx) - A Packer provisioner that uses Converge modules to provision the guest machine or container.
+  It uploads module directories to use as source, or you can use remote modules.
