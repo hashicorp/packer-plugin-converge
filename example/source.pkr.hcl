@@ -5,6 +5,10 @@ packer {
       source  = "github.com/hashicorp/docker"
       version = ">=0.0.7"
     }
+    converge = {
+      source  = "github.com/hashicorp/converge"
+      version = ">=1.0.0"
+    }
   }
 }
 
